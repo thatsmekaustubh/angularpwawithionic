@@ -1,0 +1,14 @@
+ionic start testangularpwa
+
+ng add @angular/pwa --project app
+
+Install npm i @babel/plugin-proposal-numeric-separator
+Go to node_modules/@babel/preset-env/lib/available-plugins.js
+Add var _pluginTransformNumericSeperator = _interopRequireDefault(require("@babel/plugin-proposal-numeric-separator"));
+And add "proposal-numeric-separator":
+_pluginTransformNumericSeperator to default variable
+
+ionic build --prod
+
+cd www
+http-server -o
